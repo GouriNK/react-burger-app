@@ -12,7 +12,6 @@ const burger = (props) => {
     .reduce((arr, el) => {  //flatten the array instead of nesting it
       return arr.concat(el) 
     }, []);
-    console.log(transformedIngredients);
     if(transformedIngredients.length === 0) {
       transformedIngredients = <p>Please start adding ingredients!</p>
     }
